@@ -4,7 +4,7 @@ import 'package:poe_characters/utils/storage.utils.dart';
 
 void main() {
   Hive.init('test/hive_storage');
-  
+
   group('testing storage', () {
     test('testing saving and retrieving data from hive box', () async {
       persistData('number', 33);
