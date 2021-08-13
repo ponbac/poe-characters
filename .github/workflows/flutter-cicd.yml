@@ -41,7 +41,7 @@ jobs:
     
     # Build apk and web.
     - run: flutter build apk
-    - run: flutter build web
+    # - run: flutter build web
 
     # Deploy to Firebase
     # - uses: w9jds/firebase-action@master
