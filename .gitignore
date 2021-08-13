@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+test/hive_storage/
 
 # IntelliJ related
 *.iml
