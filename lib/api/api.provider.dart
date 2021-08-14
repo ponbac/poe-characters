@@ -1,10 +1,11 @@
 import 'package:http/http.dart';
+import 'package:poe_characters/utils/constants/api_endpoints.const.dart';
 import 'package:poe_characters/utils/exceptions/api.exception.dart';
 
-const String _baseUri = 'https://api.backman.app/';
+const String _baseUrl = BASE_URL;
 
 Future<String> makeApiRequest(String query, {String? authToken}) async {
-  final request = await get(Uri.parse('$_baseUri$query'), headers: {
+  final request = await get(Uri.parse('$_baseUrl$query'), headers: {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ${authToken ?? 'NONE'}'
   });
