@@ -18,9 +18,8 @@ void main() {
     });
     test('api request to restricted endpoint with valid auth token', () async {
       // This authToken is safe to display publically
-      final response = await makeApiRequest(FETCH_ALL_CHARACTERS,
-          authToken:
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwb250dXMiLCJleHAiOjE2MjkwMzY2NzB9.gUo6cP84KjrFYdJ43bA8x-hukKemjzqsU0yCu0P4OOA');
+      final response =
+          await makeApiRequest(FETCH_ALL_CHARACTERS, authToken: TEST_TOKEN);
       expect(response.length, greaterThan(100));
     });
   });
